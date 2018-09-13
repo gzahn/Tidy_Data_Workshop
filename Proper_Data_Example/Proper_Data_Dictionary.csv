@@ -1,0 +1,6 @@
+Variable,PlotVariable,Description
+Sepal.Length,Sepal Length,Length of flower sepal
+Sepal.Width,Sepal Width,Width of flower sepal
+Petal.Length,Petal Length,Length of flower petal
+Petal.Width,Petal Width,Width of flower petal
+Species,Species,Species of iris

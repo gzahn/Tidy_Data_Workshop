@@ -1,0 +1,73 @@
+Preparing for the workshop...
+
+You will install R, R-Studio, and Git onto your personal computer before coming to the workshop.
+These instructions will walk you through that process.
+
+
+
+Install R
+Use the following link to download R for your particular computer system:
+https://cran.cnr.berkeley.edu/
+
+---
+
+Install R-Studio
+Make sure you install R before installing R-Studio
+https://www.rstudio.com/products/rstudio/download/#download
+
+---
+
+Install some R "packages"
+First, open R-Studio and go to "File -> New File -> R Script" (or press CTL-SHIFT-N)
+
+
+A new window will appear in R-Studio. This is known as an R script and it is where you will compose your code.
+In order to run any code, you will need to hit CTRL-ENTER on each line you want to run.
+
+---
+
+Copy/Paste the following line of code into your new R script:
+
+packages <- c("tidyr", "readxl", "ggplot2", "dplyr"); install.packages(packages)
+
+---
+
+Now, put your cursor on the line in the R-Script window and hit CTRL-ENTER.
+It should begin downloading and installing the packages...This may take a few minutes.
+
+---
+
+Install Git
+
+Here's the download page:
+https://git-scm.com/downloads
+
+If you are on a Windows computer, click the "Windows" button and your download should start automatically.
+Run the .exe file to install "Git Bash"
+
+If you are on a Mac, click the "Mac" button and the .dmg file should download automatically. 
+This will open in your software center and install.
+
+If you are on Linux, here are the instructions, depending on your version:
+https://git-scm.com/download/linux
+
+---
+
+Once you have Git installed, open it up (in Windows this will be a shortcut called "Git Bash", in Mac or Linux, just open your terminal and it will be working in the background)
+You will see a simple command line interface.
+copy and paste the following into your terminal:
+
+git clone https://github.com/gzahn/Tidy_Data_Workshop.git
+
+---
+
+This will download a folder of files onto your computer. It will be found wherever you were when you entered the previous command.
+This folder has all the stuff we will use in the workshop. Feel free to browse around before the workshop if you like.
+
+You are now ready!
+If you have trouble and just can't get anything to download, come by my office (SB243c) before 12pm on the day of the workshop. I've set aside that time to help with this.
+
+Dr. Zahn
+
+
+
