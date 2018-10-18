@@ -16,7 +16,12 @@ stocks
 
 # gather function(name of data set object, name for new column, name for observed values, which columns have our data)
 gather(stocks, stock, price, -day) # -day means to use ALL columns EXCEPT "day"
+long_stocks = gather(stocks, stock, price, -day) # Save this as a new object
 
+# Now, it's easy to plot and analyze with simple code
+ggplot(long_stocks, aes(x=day,y=price,color=stock, group = stock)) +
+  geom_point() + geom_line() +
+  theme(axis.text.x = element_text(angle = 75, hjust = 1))
 
 
 # Now, let's take a look at the 2010 Utah Census Data on Religious Adherence
