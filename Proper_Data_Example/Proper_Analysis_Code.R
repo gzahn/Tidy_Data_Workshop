@@ -27,7 +27,6 @@ plot1
 # Save to file
 ggsave(plot1, filename = "./Proper_Data_Example/Plot1.jpg", dpi = 200)
 
-
 # stat summaries by species for Sepal Length
 Sep_Length_Summary = iris %>%
   group_by(Species) %>%
