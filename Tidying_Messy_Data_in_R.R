@@ -35,4 +35,12 @@ View(utah)
 
 # We can use gather() to make this a bit more useful
 # see if you can fill in the blanks
-gather(utah,  ,  ,  )
+gather(utah, ??? , ??? , ??? )                     %>% 
+                                                   ggplot(aes(x=religion,y=proportion)) +
+                                                   geom_boxplot(fill="DarkGreen") + theme_bw() + 
+                                                   theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
+
+
+
+
+
