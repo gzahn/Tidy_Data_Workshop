@@ -3,11 +3,12 @@ dat = read.csv("./SEPHAT.csv")
 
 # quickly plot relative abundance
 p = ggplot(dat, aes(x=Week, y= RelAbund, color=Location, group = Location)) +
-  geom_point() + stat_smooth() 
+  geom_point() + stat_smooth(method = "lm") 
 p
 
 # Can make the plot nicer, if we want
-p + theme_minimal() +
+ggplot(dat, aes(x=Week, y= RelAbund, color=Location, group = Location)) +
+  geom_point() + stat_smooth() + theme_minimal() +
   scale_color_brewer(labels = c("Hatchery","Sewage Plant"),type = "qual", palette = 2) +
   labs(y="Relative Abundance of Coliform Bacteria")
 
