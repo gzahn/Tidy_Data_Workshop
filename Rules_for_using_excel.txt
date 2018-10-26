@@ -12,3 +12,15 @@ Rules for using Excel
 10. Make backups
 11. Use data validation to avoid errors
 12. Save the data as plain text files
+
+
+
+
+
+Why use code to analyse data?
+It saves time
+Produces better science
+Reduces risk of errors
+Encourages collaboration
+
+https://github.com/alexiscarter/BIOME/blob/master/Day3_AM/Lecture7_Reproducibility.pdf
